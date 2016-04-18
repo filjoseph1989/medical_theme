@@ -5,8 +5,8 @@
  * @author fil joseph elman {beluan}
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
- * @date 01-02-2016 - created
- * @date 01-27-2016 - updated
+ * @date 01-02-2016
+ * @date 04-18-2016
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0

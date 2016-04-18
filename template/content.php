@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 12-20-2015 - created
- * @date 02-03-2016 - Updated
+ * @date 04-18-2016 - Updated
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0
@@ -29,9 +29,13 @@
         setup_postdata( $post );
         if (have_posts()) {
       ?>
-      <?php the_title('<h3>','</h3>'); ?>
+      <?php the_title('<h1>','</h1>'); ?>
+      <?php
+        // $title = the_title('','',false);
+        // echo $title;
+      ?>
       <?php echo excerpt_limited( false, 120); ?>
-      <p><a id="event" class="waves-effect waves-light btn teal btn-large tagline-button" href="<?php the_permalink(); ?>">VIEW ANNOUNCEMENT</a></p>
+      <p><a id="event" class="waves-effect waves-light btn teal btn-large tagline-button" href="<?php the_permalink(); ?>">VIEW</a></p>
       <?php } wp_reset_postdata(); # close the query ?>
     </div>
   </div>
@@ -44,7 +48,7 @@
           <div class="row">
             <?php
             # Get the current post that has the category featured and limit the display to 4 post
-            $args    = array( 'include' => '11, 15, 7, 13' );
+            // $args    = array( 'include' => '11, 15, 7, 13' );
             $myposts = get_pages( );
             foreach ($myposts as $pages) {
               setup_postdata( $pages );

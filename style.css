@@ -61,6 +61,7 @@ Text Domain: mmfc
 .menu-item a {
   padding: 0 10px 0 10px !important;
 }
+.sub-menu li:hover{}
 #nav-mobile li,
 #nav-mobile li a {
   height: 40px;
@@ -430,30 +431,31 @@ width:222px;
 }
 
 #nav li li {
--moz-background-clip:border;
--moz-background-inline-policy:continuous;
--moz-background-origin:padding;
-background:#fff none repeat scroll 0 0;
-width:220px;
+  -moz-background-clip:border;
+  -moz-background-inline-policy:continuous;
+  -moz-background-origin:padding;
+  background:#fff none repeat scroll 0 0;
+  width:220px;
 }
 
 #nav li li a, #nav li li a:visited {
--moz-background-clip:border;
--moz-background-inline-policy:continuous;
--moz-background-origin:padding;
-font-size: 16px;
-color: #26a69a;
-display: block;
-line-height: 22px;
-padding: 14px 16px;
+  -moz-background-clip:border;
+  -moz-background-inline-policy:continuous;
+  -moz-background-origin:padding;
+  font-size: 16px;
+  color: #26a69a;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px !important;
 }
 
-#nav li li a:hover, #nav li li a:active {
--moz-background-clip:border;
--moz-background-inline-policy:continuous;
--moz-background-origin:padding;
-background: #fc79a4 none repeat scroll 0 0;
-color: #fff;
+#nav li li a:hover,
+#nav li li a:active {
+  -moz-background-clip:border;
+  -moz-background-inline-policy:continuous;
+  -moz-background-origin:padding;
+  background: #fc79a4 none repeat scroll 0 0;
+  color: #fff;
 }
 
 #nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
