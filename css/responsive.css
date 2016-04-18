@@ -1,0 +1,197 @@
+/**
+ * @package	mmfc
+ * @author	fil joseph elman - filjoseph22@gmail.com, fil.elman@greyandgreentech.com
+ * @copyright Copyright (c) 2015, Davao City
+ * @date_created	01-07-2016
+ * @date_updated	01-25-2016
+ * @since	Version 1.0.0
+ */
+@media only screen and (min-width: 320px) {
+  /* Banner */
+  #masthead {
+    height: 400px;
+  }
+  h2.certified {
+    font-size: 3.2rem;
+  }
+  p.certified {
+    font-size: 1.0rem !important;
+  }
+  #left > div:first-child,
+  #video {
+    display: none;
+  }
+  #banner {
+    padding-top: 80px;
+  }
+  #right {
+    display: none;
+  }
+  #nav-bar {
+    margin-top: 6px !important;
+  }
+  #title {
+    padding-top: 70px;
+  }
+  /* Campus*/
+  #campus > img {
+    height: 200px;
+  }
+
+  /* Footer */
+  #footer-hidden {
+    display: block;
+  }
+  #footer {
+    display: none;
+  }
+  #footer-hidden > div {
+    margin-bottom: 0;
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  /* Banner */
+  #masthead {
+    height: 600px;
+  }
+  .left-height {
+    height: 278px;
+  }
+  h2.certified {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  p.certified {
+    font-size: 1.5rem !important;
+  }
+  #banner {
+    padding-top: 80px;
+  }
+  #left > div:first-child,
+  #video {
+    display: none;
+  }
+  #nav-bar {
+    margin-top: 5px !important;
+  }
+  #left {
+    margin: 20px 0;
+  }
+
+  /*featured and campus cards*/
+  .card-wrap {
+  }
+}
+@media only screen and (max-width: 768px) { 
+  .header-line h1 {
+    font-size: 40px;
+  }
+  .max-hg {
+    max-height: 275px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Banner */
+  #masthead {
+    height: 600px;
+  }
+  .space {
+    margin-top: 261px;
+    margin-bottom: 0;
+  }
+  .left-height {
+    height: 200px;
+  }
+
+  #left {
+    margin: 0;
+  }
+  #right > div.row {
+    height: 576px;
+  }
+  #banner {
+    padding-top: 0px;
+  }
+  #banner > div {
+    margin-bottom: 0;
+  }
+  #left > div:first-child,
+  #video {
+    display: block;
+  }
+  h2.certified {
+    font-size: 3.5rem;
+  }
+  p.certified {
+    font-size: 1.2rem;
+  }
+  .video-img {
+    padding: 0 !important;
+    padding-right: 10px !important;
+  }
+  #video-popup {
+    display: block;
+  }
+  #vid {
+    margin-top: 10px;
+  }
+  #title {
+    margin-top: 0px;
+    margin-bottom: 0px !important;
+  }
+  #right {
+    display: block;
+    height: 100%;
+    padding: 40px 0;
+  }
+  .quick img {
+    height: 530px;
+  }
+
+  /*featured and campus cards*/
+  .card-wrap {
+    margin-left: 5%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* Banner */
+  #masthead {
+    height: 600px;
+  }
+  h2.certified {
+    font-size: 4rem;
+  }
+
+  /*featured and campus cards*/
+  .card-wrap {
+    margin-left: 0%;
+  }
+
+  /* Footer */
+  #footer-hidden {
+    display: none;
+  }
+  #footer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Banner */
+  #masthead {
+    height: 600px;
+  }
+  h2.certified {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  /* Featured and Campus */
+  .row .col {
+    padding: 0 0.75rem;
+  }
+  #featured .row,
+  #campus-cards > div {
+  }
+}

@@ -1,0 +1,473 @@
+/*
+Theme Name: Mindanao Medical Foundation College
+Theme URI: https://github.com/filjoseph1989/mmfc
+Author: grey and green development team
+Author URI: http://mynux.tk
+Description: A private school located in Davao City, a non-sectarian institution of higher learrning that envisions to promote the quality of education accessible to all and develops wholistic individuals who are globally competent and with Godly values in services and leadership.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Pink, Green, Medical School, Davao City College
+Text Domain: mmfc
+*/
+@import "css/font-awesome.css";
+@import "css/materialize.css";
+@import "css/colorbox.css";
+@import "css/responsive.css";
+@import "css/material.css";
+
+/* Contents */
+.margin-50 {
+  padding: 0 50px;
+}
+.mmfc-border {
+  border-left: 1px solid #f9f1f9;
+  border-right: 1px solid #f9f1f9;
+}
+.mmfc-container {
+  margin: 0 auto;
+  width: 100%;
+}
+.brand-logo {
+  max-height: 100%;
+  text-align: center;
+}
+.brand-logo img {
+  margin-top: 5px;
+  max-width: 60px;
+}
+
+/* Events */
+.event-overlay {
+  height: 163px;
+  width: 100%;
+  padding: 16px;
+  background-color: rgba(255, 192, 203, 0.3);
+}
+.event-overlay h2 {
+  padding-top: 30%;
+  text-shadow: 1px 1px white;
+  font-weight: 600;
+}
+.event-card {
+  margin-bottom: 20px;
+}
+#event {
+  margin-top: 20px;
+}
+
+
+/* Navigation Area */
+.menu-item a {
+  padding: 0 10px 0 10px !important;
+}
+#nav-mobile li,
+#nav-mobile li a {
+  height: 40px;
+  margin-top: 10px;
+}
+#nav-mobile li {
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+#nav-mobile li a {
+  padding: 0;
+}
+#nav-mobile li a:hover {
+  background-color: transparent;
+  border-bottom: 3px solid #579459;
+}
+#nav-mobile li.active a,
+#nav-mobile li.current-menu-item a {
+  background-color: transparent;
+  border-bottom: 3px solid #579459;
+}
+
+/* Banner */
+.video-img img {
+  max-width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  height: 90%;
+}
+.quick {
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.quick img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.broch {
+  height: inherit;
+  margin-bottom: 0;
+  width: inherit;
+  padding-right: 20px;
+}
+.indent {
+  text-indent: 20px;
+  line-height: 10px;
+}
+.indent:hover {
+  text-decoration: underline;
+}
+.indent a {
+  color: white;
+}
+.line-height {
+  line-height: 10px;
+}
+.certified {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h2.certified {
+  text-shadow: 1px 2px aliceblue;
+}
+.certified a {
+  color: black;
+}
+p.certified {
+  font-style: italic;
+}
+.img-video img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.img-video-left {
+  float: left;
+}
+.bg-overlay {
+  background-color: rgba(244, 143, 177, 0.5);
+}
+.bg-overlay > div.row {
+  margin-bottom: 0;
+}
+#masthead {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+#masthead-inner {
+  height: 0%;
+}
+#banner {
+  height: 100%;
+  padding: 0 0;
+}
+#banner > div {
+  height: 100%;
+}
+#video {
+  margin-bottom: 0;
+}
+#video-thumb {
+  margin-bottom: 0;
+}
+
+/* Featured Area*/
+.fcards img:hover {
+  opacity: 0.7;
+}
+.fcards {
+  text-align: center;
+}
+
+/* About Us Header Area */
+.header-about {}
+.header-line {
+  /*width: 300px;*/
+  /*margin: 0 auto;*/
+}
+.header-line h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 100px 0;
+}
+
+/* About Us Content Area */
+.line-bottom {
+  border-bottom: 1px solid #000;
+}
+#about-message h4,
+#about-message h5, {
+  text-transform: uppercase;
+}
+
+/* Footer Area */
+.footer {
+  margin-top: 20px;
+}
+.footer p {
+  text-align: left;
+}
+.footer p,
+.footer li {
+  font-size: smaller;
+}
+.social {
+  margin-bottom: 0px;
+}
+.footer-nav li a,
+.footer-contact li a,
+.footer-other li a,
+.footer-social li a,
+.footer-term li a {
+  color: #FFFFFF;
+}
+.footer-nav li a:hover,
+.footer-contact li a:hover,
+.footer-other li a:hover,
+.footer-social li a:hover,
+.footer-term li a:hover {
+  text-decoration: underline;
+}
+.footer-term li {
+  display: inline;
+}
+#img-video-first {
+  margin-left: 0;
+}
+#nav-mobile {
+  margin-top: 10px;
+}
+#navi {
+  height: 70px;
+}
+#anounce {
+  margin: 100px 0;
+}
+#content {
+  padding-left: 0;
+  padding-right: 0;
+}
+#post-156 {
+  margin-bottom: 0;
+}
+#passer {
+  width: 100%;
+}
+#featured,
+#campus-cards {
+  padding: 50px 10px;
+}
+#featured {
+  background-color: #f9f2fa;
+}
+#footer .row {
+  margin-bottom: 0;
+}
+
+/* Campus Area */
+.campus {
+  height: 170px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.campus img {
+  max-height: 100%;
+  height: 187px;
+}
+.text-left {
+  text-align: left;
+}
+#campus-wrapper {
+  margin-bottom: 0;
+}
+#campus {
+  margin-bottom: 0;
+}
+#campus img:hover {
+  opacity: 0.7;
+}
+
+/* Map */
+#map {
+  height: 200px;
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Program Page */
+#program-img img {
+  max-width: 100%;
+  width: -moz-available;
+  width: 100%;
+}
+
+/* Troubleshoor */
+.myborder {
+  border:1px solid #000;
+}
+
+/* Cards */
+.demo-card-square.mdl-card {
+  width: 100%;
+  height: 320px;
+  margin: 0 auto;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+.mdl-card__title {
+  background-size: cover !important;
+}
+.card-wrap {
+  width: 320px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* Single Style*/
+.max-hg {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+}
+.separator {
+  width: 150px;
+}
+
+/*Contact Form 7 Style*/
+input[type="text"], input[type="email"] {
+  height: 2rem;
+}
+
+/* 404 Page Style */
+.error {
+	color: #F0F0F0;
+	font-size: 200px;
+	font-weight: bold;
+	margin: 150px 0px;
+}
+.margin {
+	margin-top: 100px;
+}
+.tagline-button {
+  margin-left: auto;
+}
+div.wpcf7-validation-errors {
+  margin-top: 20px;
+}
+
+/* Load More*/
+#loadMore {
+  cursor:pointer;
+  background-color: #00BFA5;
+  margin-top: 5%;
+}
+
+#loadMore:hover {
+  border: 1px solid #ff80ab;
+}
+#showLess {
+  color:red;
+  cursor:pointer;
+}
+#showLess:hover {
+  color:black;
+}
+
+/*navigation menu */
+#nav {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+bottom:0;
+left:0;
+margin:0;
+padding:0;
+width:100%;
+position:absolute;
+z-index:1;
+}
+
+#nav, #nav ul {
+line-height:50px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+width:100%;
+}
+
+#nav a, #nav a:hover {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+border:medium none;
+display:block;
+text-decoration:none;
+}
+
+#nav li {
+float: right;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+
+#nav a, #nav a:visited {
+color:#FFFFFF;
+display:block;
+padding:0 20px;
+font-size: 16px;
+}
+
+#nav a:hover, #nav a:active, .current_page_item a, #home .on {
+text-decoration:none;
+}
+
+#nav li ul {
+height:auto;
+left:-999em;
+line-height:30px;
+margin:0;
+padding:0;
+position:absolute;
+width:222px;
+}
+
+#nav li li {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#fff none repeat scroll 0 0;
+width:220px;
+}
+
+#nav li li a, #nav li li a:visited {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+font-size: 16px;
+color: #26a69a;
+display: block;
+line-height: 22px;
+padding: 14px 16px;
+}
+
+#nav li li a:hover, #nav li li a:active {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background: #fc79a4 none repeat scroll 0 0;
+color: #fff;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+left:auto;
+}
+/*navigation menu */
+
+.video-img {
+  width: 200px;
+  height: 110px;
+  display: block;
+  overflow: hidden;
+}
+.video-img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
