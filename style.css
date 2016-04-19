@@ -239,6 +239,9 @@ p.certified {
 #anounce {
   margin: 100px 0;
 }
+#anounce h1 {
+  line-height: 20px;
+}
 #content {
   padding-left: 0;
   padding-right: 0;
