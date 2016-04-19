@@ -31,7 +31,7 @@
       ?>
       <?php the_title('<h1>','</h1>'); ?>
       <?php # echo excerpt_limited( false, 120); ?>
-      <h5><?php echo "Click the button to see what we offer."; ?></h5>
+      <h5><?php # echo "Click the button to see what we offer."; ?></h5>
       <p><a id="event" class="waves-effect waves-light btn teal btn-large tagline-button" href="<?php the_permalink(); ?>">VIEW ANNOUNCEMENT</a></p>
       <?php } wp_reset_postdata(); # close the query ?>
     </div>
