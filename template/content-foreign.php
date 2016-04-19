@@ -25,14 +25,22 @@
           </div>
           <div class="row"></div>
           <?php
-            $args    = array('category_name' => 'Foreign' );
+            $args    = array('category_name' => 'foreign' );
             $myposts = get_posts( $args );
             foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
               <div class="row">
                 <div id="program-img" class="col s3">
                   <?php if (has_post_thumbnail()) {
-                    the_post_thumbnail('medium');
-                  } ?>
+                      $url = "";
+                      if (grab_post_image() != null) {
+                        $url   = grab_post_image();
+                        $class = 'group1';
+                      }
+                    ?>
+                    <a class='<?php echo $class; ?>' href="<?php echo $url; ?>">
+                      <?php the_post_thumbnail(); ?>
+                    </a>
+                  <?php } ?>
                 </div>
                 <div class="col s9 col-sm-offset-3">
                   <a href="<?php the_permalink(); ?>" style="color:black;"><?php the_title('<h5>','</h5>'); ?></a>
