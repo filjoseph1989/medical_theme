@@ -76,7 +76,7 @@ if (!function_exists('current_year')) {
 }
 
 /**
- * This function return the image from the post
+ * This function return the image that is within a post
  * @source https://wordpress.org/support/topic/retreive-first-image-from-post
  */
 if (!function_exists('grab_post_image')) {
