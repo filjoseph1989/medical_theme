@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 12-20-2015 - created
- * @date 04-18-2016 - Updated
+ * @date 04-20-2016 - Updated
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0
@@ -30,11 +30,8 @@
         if (have_posts()) {
       ?>
       <?php the_title('<h1>','</h1>'); ?>
-      <?php
-        // $title = the_title('','',false);
-        // echo $title;
-      ?>
-      <?php echo excerpt_limited( false, 120); ?>
+      <?php # echo excerpt_limited( false, 120); ?>
+      <?php echo "Click the button to see what we offer."; ?>
       <p><a id="event" class="waves-effect waves-light btn teal btn-large tagline-button" href="<?php the_permalink(); ?>">VIEW</a></p>
       <?php } wp_reset_postdata(); # close the query ?>
     </div>
