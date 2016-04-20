@@ -30,16 +30,18 @@
             foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
               <div class="row">
                 <div id="program-img" class="col s3">
-                  <?php if (has_post_thumbnail()) {
+                  <?php
+                    if (has_post_thumbnail()) {
+                      echo 'yes';
                       $url = "";
                       if (grab_post_image() != null) {
                         $url   = grab_post_image();
                         $class = 'group1';
-                      }
-                    ?>
-                    <a class='<?php echo $class; ?>' href="<?php echo $url; ?>">
-                      <?php the_post_thumbnail(); ?>
-                    </a>
+                    }
+                  ?>
+                  <a class='<?php echo $class; ?>' href="<?php echo $url; ?>">
+                    <?php the_post_thumbnail(); ?>
+                  </a>
                   <?php } ?>
                 </div>
                 <div class="col s9 col-sm-offset-3">
