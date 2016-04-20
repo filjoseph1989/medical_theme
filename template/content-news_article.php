@@ -14,16 +14,18 @@
 ?>
 
 <section id="anounce">
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <?php if(has_post_thumbnail()): ?>
-        <?php the_post_thumbnail('', array('class' => 'responsive-img')); ?>
-      <?php endif; ?>
-    </div>
-    <div class="col s12 m6 l9">
-      <?php
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <?php if(has_post_thumbnail()): ?>
+          <?php the_post_thumbnail('', array('class' => 'responsive-img')); ?>
+        <?php endif; ?>
+      </div>
+      <div class="col s12">
+        <?php
         the_content();
-      ?>
+        ?>
+      </div>
     </div>
   </div>
 </section>
