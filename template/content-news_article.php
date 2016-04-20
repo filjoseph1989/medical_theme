@@ -5,8 +5,8 @@
  * @author fil joseph elman {beluan}
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
- * @date 01-28-2016 - created
- * @date 01-28-2016 - updated
+ * @date 01-28-2016
+ * @date 04-20-2016
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0
@@ -15,7 +15,12 @@
 
 <section id="anounce">
   <div class="row">
-    <div class="col s12">
+    <div class="col s12 m6 l3">
+      <?php if(has_post_thumbnail()): ?>
+        <?php the_post_thumbnail('', array('class' => 'responsive-img')); ?>
+      <?php endif; ?>
+    </div>
+    <div class="col s12 m6 l9">
       <?php
         the_content();
       ?>
