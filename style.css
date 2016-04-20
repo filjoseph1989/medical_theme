@@ -476,3 +476,13 @@ left:auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
+
+blockquote:before {
+  content: "";
+}
+blockquote:after {
+  content: "";
+}
+blockquote{
+  font-style:normal;
+}

@@ -98,7 +98,7 @@ function mmfc_scripts() {
   wp_enqueue_script( 'material', 'https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js', array( 'jquery' ), '', false );
   wp_enqueue_script( 'google', 'http://maps.googleapis.com/maps/api/js', array( 'jquery' ), '', false );
   wp_enqueue_script( 'maps', get_template_directory_uri() . '/js/maps.js', array( 'jquery' ), '', true );
-  // wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), '', true );
+  wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'mmfc_scripts' );
 

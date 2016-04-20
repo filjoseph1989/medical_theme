@@ -9,16 +9,20 @@
  * @version 1.0.0
  */
 $(document).ready(function(){
-  var size_li = $("#list > div.row").size();
-  console.log(size_li);
-  var x = 3;
-  $('#list > div.row:lt('+x+')').show();
-  $('#loadMore').click(function () {
-      x = (x+5 <= size_li) ? x+5 : size_li;
-      $('#list > div.row:lt('+x+')').show();
-  });
-  $('#showLess').click(function () {
-      x=(x-5<0) ? 3 : x-5;
-      $('#list > div.row').not(':lt('+x+')').hide();
-  });
+  // load more
+  // var size_li = $("#list > div.row").size();
+  // var x = 3;
+  // $('#list > div.row:lt('+x+')').show();
+  // $('#loadMore').click(function () {
+  //     x = (x+5 <= size_li) ? x+5 : size_li;
+  //     $('#list > div.row:lt('+x+')').show();
+  // });
+  // $('#showLess').click(function () {
+  //     x=(x-5<0) ? 3 : x-5;
+  //     $('#list > div.row').not(':lt('+x+')').hide();
+  // });
+var quote = $('p.quote').html();
+quote = '<blockquote>'+quote+'</blockquote>';
+$('p.quote').html(quote);
+
 });
