@@ -36,46 +36,45 @@
               <div id="video" class="row">
                 <div class="col s8">
                   <div id="video-thumb" class="row">
-                    <?php
-                      $args = array( 'posts_per_page' => 4, 'category_name' => 'video' );
-                      $myposts = get_posts( $args );
-                      foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                        <div class="col s3 video-img">
-                          <?php if (has_post_thumbnail()) { ?>
-                            <?php
-                              $url = "";
-                              if (grab_post_image() != null) {
-                                $url   = grab_post_image();
-                                $class = 'group1';
-                              } elseif (empty($url)) {
-                                $url   = wp_strip_all_tags( get_the_content());
-                                $class = 'vimeo';
-                              }
-                            ?>
-                            <a class='<?php echo $class; ?>' href="<?php echo $url; ?>">
-                              <?php the_post_thumbnail(); ?>
-                            </a>
-                          <?php } ?>
-                        </div>
-                      <?php endforeach; ?>
+                    <?php $args = array( 'posts_per_page' => 4, 'category_name' => 'video' ); ?>
+                    <?php $myposts = get_posts( $args ); ?>
+                    <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                      <div class="col s3 video-img">
+                        <?php if (has_post_thumbnail()) { ?>
+                          <?php
+                            $url = "";
+                            if (grab_post_image() != null) {
+                              $url   = grab_post_image();
+                              $class = 'group1';
+                            } elseif (empty($url)) {
+                              $url   = wp_strip_all_tags( get_the_content());
+                              $class = 'vimeo';
+                            }
+                          ?>
+                          <a class='<?php echo $class; ?>' href="<?php echo $url; ?>">
+                            <?php the_post_thumbnail(); ?>
+                          </a>
+                        <?php } ?>
+                      </div>
+                    <?php endforeach; ?>
                     <?php wp_reset_postdata(); ?>
-                  </div>
+                  </div>                
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col s1">&nbsp;</div>
-        <div id="right" class="col s3">
-          <div class="row">
-            <div class="quick col s12">
-              <div class="row waves-effect waves-light broch">
+          <div id="right" class="col s3">
+            <div class="row">
+              <div class="quick col s12">
+                <div class="row waves-effect waves-light broch">
 
-              </div>
-           </div>
+                </div>
+             </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
