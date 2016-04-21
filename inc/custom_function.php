@@ -109,4 +109,27 @@ if (!function_exists('grab_page_image')) {
   }
 }
 
+/**
+ * This function return the url and class
+ * @source https://wordpress.org/support/topic/retreive-first-image-from-post
+ */
+if (!function_exists('url_class')) {
+  function url_class() {
+    if (has_post_thumbnail()) {
+      $url = "";
+      if (grab_post_image() != null) {
+        $url   = grab_post_image();
+        $class = 'group1';
+      } elseif (empty($url)) {
+        $url   = wp_strip_all_tags( get_the_content());
+        $class = 'vimeo';
+      }
+      return [
+        'url' => $url,
+        'class' => $class
+      ];
+    }
+  }
+}
+
 ?>

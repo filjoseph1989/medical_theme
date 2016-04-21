@@ -9,18 +9,19 @@
  * @version 1.0.0
  */
 $(document).ready(function(){
-  // load more
-  // var size_li = $("#list > div.row").size();
-  // var x = 3;
-  // $('#list > div.row:lt('+x+')').show();
-  // $('#loadMore').click(function () {
-  //     x = (x+5 <= size_li) ? x+5 : size_li;
-  //     $('#list > div.row:lt('+x+')').show();
-  // });
-  // $('#showLess').click(function () {
-  //     x=(x-5<0) ? 3 : x-5;
-  //     $('#list > div.row').not(':lt('+x+')').hide();
-  // });
+  /*
+    var size_li = $("#list > div.row").size();
+    var x = 3;
+    $('#list > div.row:lt('+x+')').show();
+    $('#loadMore').click(function () {
+      x = (x+5 <= size_li) ? x+5 : size_li;
+      $('#list > div.row:lt('+x+')').show();
+    });
+    $('#showLess').click(function () {
+      x=(x-5<0) ? 3 : x-5;
+      $('#list > div.row').not(':lt('+x+')').hide();
+    });
+  */
 
   /**
    * Add blockquote to the p.quote
@@ -35,7 +36,7 @@ $(document).ready(function(){
   $('.video-img img').height( function() {
     $(this).removeAttr('width');
     $(this).removeAttr('height');
-    return $(this).height(110);
+    return $(this).height(90);
   });
 
   var gallery = $('div.gallery').html();

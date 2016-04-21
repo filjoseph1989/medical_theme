@@ -8,10 +8,10 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 01-17-2016
- * @date 04-19-2016
+ * @date 04-21-2016
  * @package WordPress
- * @subpackage mmfctheme
- * @since mmfctheme 1.0
+ * @subpackage mmfc-site
+ * @since mmfc-site 1.0
  */
 ?>
 <?php
@@ -34,29 +34,38 @@
                 </div>
               </div>
               <div id="video" class="row">
-                <div class="col s8">
+                <div class="col s12">
                   <div id="video-thumb" class="row">
-                    <?php $args = array( 'posts_per_page' => 4, 'category_name' => 'video' ); ?>
-                    <?php $myposts = get_posts( $args ); ?>
-                    <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                      <div class="col s3 video-img">
-                        <?php if (has_post_thumbnail()): ?>
-                          <?php
-                            $url = "";
-                            if (grab_post_image() != null) {
-                              $url   = grab_post_image();
-                              $class = 'group1';
-                            } elseif (empty($url)) {
-                              $url   = wp_strip_all_tags( get_the_content());
-                              $class = 'vimeo';
-                            }
-                          ?>
-                          <a class='<?php echo $class; ?>' href="<?php echo $url; ?>">
-                            <?php the_post_thumbnail(); ?>
-                          </a>
-                        <?php endif; ?>
-                      </div><!-- col s3 video-img -->
-                    <?php endforeach; ?>
+                    <?php $args        = array( 'posts_per_page' => 2, 'category_name' => 'video' ); ?>
+                    <?php $video_thumb = array( 'posts_per_page' => 2, 'category_name' => 'video-thumb' ); ?>
+                    <?php $video     = get_posts( $video_thumb ); ?>
+                    <?php $myposts     = get_posts( $args ); ?>
+                    <div class="col s3 center-align">
+                      <strong class="white-text">LOGO</strong>
+                      <div class="row">
+                        <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                          <?php $result = url_class(); ?>
+                          <div class="col s6 video-img">
+                            <a class='<?php echo $result['class']; ?>' href="<?php echo $result['url']; ?>">
+                              <?php the_post_thumbnail(); ?>
+                            </a>
+                          </div>
+                        <?php endforeach; ?>
+                      </div>
+                    </div>
+                    <div class="col s3 center-align">
+                      <strong class="white-text">VIDEO</strong>
+                      <div class="row">
+                        <?php foreach ($video as $post): ?>
+                          <?php $result = url_class(); ?>
+                          <div class="col s6 video-img">
+                            <a class='<?php echo $result['class']; ?>' href="<?php echo $result['url']; ?>">
+                              <?php the_post_thumbnail(); ?>
+                            </a>
+                          </div>
+                        <?php endforeach; ?>
+                      </div>
+                    </div>
                     <?php wp_reset_postdata(); ?>
                   </div>
                 </div>
