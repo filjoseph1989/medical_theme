@@ -14,12 +14,12 @@
  * @since mmfctheme 1.0
  */
 ?>
+<?php
+  $bg_img = get_posts( array( 'posts_per_page' => 1, 'category_name' => 'background' ) );
+  $post   = $bg_img[0];
+  $image  = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
+?>
 <header id="masthead" class="row">
-  <?php
-    $bg_img = get_posts( array( 'posts_per_page' => 1, 'category_name' => 'background' ) );
-    $post   = $bg_img[0];
-    $image  = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
-  ?>
   <div id="banner" class="col s12" style="background: url('<?php echo $image[0]; ?>') no-repeat center center; background-size:cover;">
     <div class="bg-overlay">
       <div class="row">
@@ -40,7 +40,7 @@
                     <?php $myposts = get_posts( $args ); ?>
                     <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                       <div class="col s3 video-img">
-                        <?php if (has_post_thumbnail()) { ?>
+                        <?php if (has_post_thumbnail()): ?>
                           <?php
                             $url = "";
                             if (grab_post_image() != null) {
@@ -54,11 +54,11 @@
                           <a class='<?php echo $class; ?>' href="<?php echo $url; ?>">
                             <?php the_post_thumbnail(); ?>
                           </a>
-                        <?php } ?>
-                      </div>
+                        <?php endif; ?>
+                      </div><!-- col s3 video-img -->
                     <?php endforeach; ?>
                     <?php wp_reset_postdata(); ?>
-                  </div>                
+                  </div>
                 </div>
               </div>
             </div>

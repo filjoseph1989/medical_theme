@@ -90,7 +90,8 @@ add_action( 'after_setup_theme', 'mmfc_setup' );
  */
 function mmfc_scripts() {
 	wp_enqueue_style( 'mmfc-style', get_stylesheet_uri() );
-  wp_enqueue_script( 'mmfc-script', get_template_directory_uri() . '/js/jquery-1.11.3.js', array( 'jquery' ), '', false );
+  wp_enqueue_script( 'mmfc-script', get_template_directory_uri() . '/js/jquery-1.12.3.min.js', array( 'jquery' ), '', false );
+  // wp_enqueue_script( 'mmfc-script', get_template_directory_uri() . '/js/jquery-1.11.3.js', array( 'jquery' ), '', false );
   wp_enqueue_script( 'mmfc-material', get_template_directory_uri() . '/js/materialize.min.js', array( 'jquery' ), '', true );
   wp_enqueue_script( 'colorbox', get_template_directory_uri() . '/js/jquery.colorbox.js', array( 'jquery' ), '', false );
   wp_enqueue_script( 'responsive', get_template_directory_uri() . '/js/responsive.js', array( 'jquery' ), '', true );

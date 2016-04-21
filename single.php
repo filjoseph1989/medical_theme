@@ -6,10 +6,10 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 01-02-2016
- * @date 04-18-2016
+ * @date 04-21-2016
  * @package WordPress
- * @subpackage mmfctheme
- * @since mmfctheme 1.0
+ * @subpackage mmfc-site
+ * @since mmfc-site 1.0
  */
 ?>
 <?php get_header(); ?>
@@ -19,6 +19,8 @@
       while(have_posts()) : the_post();
         if (has_category(array('news', 'announcement'))) {
           get_template_part( 'template/content', 'news_article' );
+        } elseif (has_category('activity')) {
+          get_template_part( 'template/content', 'activity' );
         } else {
           get_template_part( 'template/content', 'single' );
         }
