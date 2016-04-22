@@ -41,7 +41,6 @@
                     <?php $video     = get_posts( $video_thumb ); ?>
                     <?php $myposts     = get_posts( $args ); ?>
                     <div class="col s3 center-align">
-                      <strong class="white-text">LOGO</strong>
                       <div class="row">
                         <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                           <?php $result = url_class(); ?>
@@ -53,8 +52,8 @@
                         <?php endforeach; ?>
                       </div>
                     </div>
+                    <div class="bullet">&nbsp;</div>
                     <div class="col s3 center-align">
-                      <strong class="white-text">VIDEO</strong>
                       <div class="row">
                         <?php foreach ($video as $post): ?>
                           <?php $result = url_class(); ?>
