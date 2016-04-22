@@ -16,12 +16,12 @@
 <section id="anounce">
   <div class="row ">
 		<div class="col s12 l6">
-			<?php the_content(); ?>
-		</div>
-		<div class="col s12 l6">
 			<?php if (has_post_thumbnail()) {
 				the_post_thumbnail('medium max-hg');
 			} ?>
+		</div>
+    <div class="col s12 l6">
+			<?php the_content(); ?>
 		</div>
 	</div>
 </section>

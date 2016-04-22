@@ -43,7 +43,7 @@
                   </div>
                   <div class="col s12 l9">
                     <a href="<?php the_permalink(); ?>" style="color:black;"><?php the_title('<h5>','</h5>'); ?></a>
-                    <?php echo excerpt_limited( get_the_permalink(), 300 ); ?>
+                    <?php echo excerpt_limited( get_the_permalink(), 400 ); ?>
                   </div>
                 </div>
               <?php endforeach;
