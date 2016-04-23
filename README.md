@@ -25,4 +25,4 @@ Tags, materialize, material design lite,
 4. Upload the .zip file in your dashboard->appearances->themes.
 
 ## Author
-This theme was develop by Fil Joseph Elman
+This theme was developed and maintained by Fil Joseph Elman
