@@ -1,2 +1,1 @@
-# mmfc
-Medical School
+Medical School theme
