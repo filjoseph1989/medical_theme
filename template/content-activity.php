@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for single file
+ * The template for single activit file
  *
  * @author fil joseph elman {beluan}
  * @contact fil.elman@greyandgreentech.com - business
