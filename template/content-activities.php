@@ -26,7 +26,12 @@
           </div>
           <div class="row"></div>
           <div class="row">
-            <?php $args = array( 'category_name' => 'activity' ); ?>
+            <?php
+              $args = array(
+                'category_name' => 'activity',
+                'numberposts' => 20
+              );
+            ?>
             <?php $posts = get_posts( $args ); ?>
             <?php foreach ( $posts as $post ) : setup_postdata( $post ) ?>
               <?php
