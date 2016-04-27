@@ -35,7 +35,7 @@
                   } ?>
                 </div>
                 <div class="col s12 m6 l8">
-                  <a href="#" style="color:black;"><?php the_title('<h5>','</h5>'); ?></a>
+                  <a href="<?php the_permalink();?>" style="color:black;"><?php the_title('<h5>','</h5>'); ?></a>
                   <?php the_content(); ?>
                 </div>
               </div>

@@ -21,6 +21,8 @@
           get_template_part( 'template/content', 'news_article' );
         } elseif (has_category('activity')) {
           get_template_part( 'template/content', 'activity' );
+        } elseif (has_category('download')) {
+          get_template_part( 'template/content', 'download' );
         } else {
           get_template_part( 'template/content', 'single' );
         }

@@ -44,7 +44,8 @@
                     <h2 class="mdl-card__title-text"><?php echo $post->post_title; ?></h2>
                   </div>
                   <div class="mdl-card__supporting-text">
-                    <?php echo '<br/>'. excerpt_limited(get_page_link($post->ID)); ?>
+                    <?php # echo '<br/>'. excerpt_limited(get_page_link($post->ID)); ?>
+                    <p><?php the_field('description'); ?></p>
                   </div>
                   <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--teal" href="<?php echo get_page_link($post->ID); ?>">
