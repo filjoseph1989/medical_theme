@@ -24,5 +24,6 @@ Tags, materialize, material design lite,
 3. Download the .zip file, extract, an upload it to the wp-content/themes directory or
 4. Upload the .zip file in your dashboard->appearances->themes.
 
-## Author
-This theme was develop by Fil Joseph Elman
+## Author and Designers
+The theme was developed by Fil Joseph Elman at Grey and Green Technologies Inc, and contributed by, Cheen Lyn Rodriguez and
+Claide Francis Magallen.
