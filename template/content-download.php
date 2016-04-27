@@ -15,6 +15,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12">
+        <h5><blockquote><?php the_title(); ?></blockquote></h5>
         <?php the_content(); ?>
       </div>
     </div>
