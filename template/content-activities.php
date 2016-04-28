@@ -29,7 +29,7 @@
             <?php
               $args = array(
                 'category_name' => 'activity',
-                'numberposts' => 20
+                'numberposts' => 20,
               );
             ?>
             <?php $posts = get_posts( $args ); ?>

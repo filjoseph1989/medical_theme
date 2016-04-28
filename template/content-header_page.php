@@ -12,11 +12,12 @@
  * @since mmfctheme 1.0
  */
 ?>
+
 <header id="masthead-inner" class="row">
   <?php
-    $bg_img = get_posts( array( 'posts_per_page' => 1, 'category_name' => 'background' ) );
-    $post = $bg_img[0];
-    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
+    $bg_img = get_posts( array( 'posts_per_page' => 1, 'category_name' => 'background-page' ) );
+    $post   = $bg_img[0];
+    $image  = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
     setup_postdata($post);
   ?>
   <div id="banner" class="col s12 center" style="background: url('<?php echo $image[0]; ?>') no-repeat center center; background-size:cover;">
