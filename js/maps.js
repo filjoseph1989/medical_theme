@@ -8,8 +8,7 @@ function initialize () {
 	};
 
 	var map=new google.maps.Map(document.getElementById("map"),mapProp);
-	// var image  = 'http://localhost/mmfc-site/wp-content/themes/mmfc/img/mapmarker.png';
-	var image  = 'http://mmfc-staging.greyandgreentech.com/wp-content/themes/mmfc/img/mapmarker.png';
+	var image  = 'http://mmfc-staging.greyandgreentech.com/wp-content/themes/mmfc-site/img/mapmarker.png';
 	var marker = new google.maps.Marker({
 	  position:myCenter,
 	  icon:image,

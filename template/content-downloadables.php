@@ -5,11 +5,11 @@
  * @author fil joseph elman {beluan}
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
- * @date 01-14-2016 - Created
- * @date 02-02-2016 - Updated
+ * @date 01-14-2016
+ * @date 04-27-2016
  * @package WordPress
- * @subpackage mmfctheme
- * @since mmfctheme 1.0
+ * @subpackage mmfc-site
+ * @since mmfc-site 1.0
  */
 ?>
 <section>
@@ -35,8 +35,8 @@
                   } ?>
                 </div>
                 <div class="col s12 m6 l8">
-                  <a href="#" style="color:black;"><?php the_title('<h5>','</h5>'); ?></a>
-                  <?php the_content(); ?>
+                  <a href="<?php the_permalink();?>" style="color:black;"><?php the_title('<h5>','</h5>'); ?></a>
+                  <p><?php the_field('description'); ?></p>
                 </div>
               </div>
             <?php endforeach;

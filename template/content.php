@@ -5,8 +5,8 @@
  * @author fil joseph elman {beluan}
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
- * @date 12-20-2015 - created
- * @date 04-20-2016 - Updated
+ * @date 12-20-2015
+ * @date 04-22-2016
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0
@@ -58,7 +58,8 @@
                       <h2 class="mdl-card__title-text"><?php echo $pages->post_title; ?></h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                      <?php echo '<br/>'. excerpt_limited(get_page_link($pages->ID)); ?>
+                      <p>This is a sample description.</p>
+                      <?php # echo '<br/>'. excerpt_limited(get_page_link($pages->ID)); ?>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                       <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--teal" href="<?php echo get_page_link($pages->ID); ?>">
@@ -101,7 +102,8 @@
                       <h2 class="mdl-card__title-text"><?php the_title(); ?></h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                      <?php echo '<br/>'. excerpt_limited(get_the_permalink()); ?>
+                      <p>This is a sample description</p>
+                      <?php # echo '<br/>'. excerpt_limited(get_the_permalink()); ?>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                       <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--teal" href="<?php echo the_permalink(); ?>">
