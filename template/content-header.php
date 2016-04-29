@@ -39,7 +39,7 @@
                   <div id="video-thumb" class="row">
                     <?php $args        = array( 'posts_per_page' => 2, 'category_name' => 'video' ); ?>
                     <?php $myposts     = get_posts( $args ); ?>
-                    <div class="col s3 center-align">
+                    <div class="col s4 center-align">
                       <div class="row waves-effect waves-light">
                         <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                           <?php $result = url_class(); ?>

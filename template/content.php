@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 12-20-2015
- * @date 04-22-2016
+ * @date 04-29-2016
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0
@@ -45,7 +45,6 @@
           <div class="row">
             <?php
             # Get the current post that has the category featured and limit the display to 4 post
-            // $args    = array( 'include' => '11, 15, 7, 13' );
             $myposts = get_pages( );
             foreach ($myposts as $pages) {
               setup_postdata( $pages );
@@ -55,16 +54,14 @@
                 <div class="card-wrap col s12 m6 l3">
                   <div class="demo-card-square mdl-card mdl-shadow--2dp">
                     <div class="mdl-card__title mdl-card--expand" style="background:url('<?php echo $feature_image_meta[0]; ?>') no-repeat #46B6AC;">
-                      <h2 class="mdl-card__title-text"><?php echo $pages->post_title; ?></h2>
+                      <h2 class="mdl-card__title-text">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" href="<?php echo get_page_link($pages->ID); ?>">
+                          <?php echo $pages->post_title; ?>
+                        </a>
+                      </h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                      <p>This is a sample description.</p>
-                      <?php # echo '<br/>'. excerpt_limited(get_page_link($pages->ID)); ?>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--teal" href="<?php echo get_page_link($pages->ID); ?>">
-                        View
-                      </a>
+                      <p><?php echo excerpt_limited( false, 50); ?></p>
                     </div>
                   </div>
                 </div>
@@ -97,18 +94,13 @@
             ?>
               <?php if (have_posts()) { ?>
                 <div class="card-wrap col s12 m6 l3">
-                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="demo-card-event mdl-card mdl-shadow--2dp">
                     <div class="mdl-card__title mdl-card--expand" style="background:url('<?php echo $image[0]; ?>') no-repeat #46B6AC;">
-                      <h2 class="mdl-card__title-text"><?php the_title(); ?></h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                      <p>This is a sample description</p>
-                      <?php # echo '<br/>'. excerpt_limited(get_the_permalink()); ?>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--teal" href="<?php echo the_permalink(); ?>">
-                        View
-                      </a>
+                      <h2 class="mdl-card__title-text mdl-color-text--white">
+                        <a href="<?php echo the_permalink(); ?>" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" style="text-transform: capitalize;font-size: 19px;font-weight: 300;">
+                          <?php the_title(); ?>
+                        </a>
+                      </h2>
                     </div>
                   </div>
                 </div>
