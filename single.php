@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 01-02-2016
- * @date 04-21-2016
+ * @date 05-03-2016
  * @package WordPress
  * @subpackage mmfc-site
  * @since mmfc-site 1.0
@@ -21,6 +21,8 @@
           get_template_part( 'template/content', 'news_article' );
         } elseif (has_category('activity')) {
           get_template_part( 'template/content', 'activity' );
+        } elseif (has_category('campus')) {
+          get_template_part( 'template/content', 'campus' );
         } elseif (has_category('download')) {
           get_template_part( 'template/content', 'download' );
         } else {
