@@ -25,6 +25,8 @@
           get_template_part( 'template/content', 'campus' );
         } elseif (has_category('download')) {
           get_template_part( 'template/content', 'download' );
+        } elseif (has_category('events')) {
+          get_template_part( 'template/content', 'post_events' );
         } else {
           get_template_part( 'template/content', 'single' );
         }

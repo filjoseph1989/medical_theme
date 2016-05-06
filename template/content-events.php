@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 01-18-2016 - Created
- * @date 02-15-2016 - Updated
+ * @date 05-06-2016 - Updated
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0
@@ -36,11 +36,15 @@
                   <div class="demo-card-square mdl-card mdl-shadow--2dp event-card">
                     <div class="mdl-card__title mdl-card--expand" style="background:url('<?php echo $feature_image_meta[0]; ?>') no-repeat #46B6AC;padding: 0">
                       <div class="event-overlay">
-                        <h2 class="mdl-card__title-text mdl-color-text--black"><?php echo the_title(); ?></h2>
+                        <h2 class="mdl-card__title-text">
+                          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" href="<?php echo get_page_link($mypost->ID); ?>">
+                            <?php echo the_title(); ?>
+                          </a>
+                        </h2>
                       </div>
                     </div>
                     <div class="mdl-card__supporting-text">
-                      <?php echo '<br/>'. excerpt_limited(get_page_link($mypost->ID)); ?>
+                      <?php echo '<br/>'. post_excerpt(get_field('post-events')); ?>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                       <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--teal" href="<?php echo get_page_link($mypost->ID); ?>">

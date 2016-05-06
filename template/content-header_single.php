@@ -21,7 +21,7 @@
     endwhile;
     # Display the default background image
     if ($image[0] == null) {
-      $bg_img = get_posts( array( 'posts_per_page' => 1, 'category_name' => 'background' ) );
+      $bg_img = get_posts( array( 'posts_per_page' => 1, 'category_name' => 'background-page' ) );
       $post   = $bg_img[0];
       $image  = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
       setup_postdata($post);

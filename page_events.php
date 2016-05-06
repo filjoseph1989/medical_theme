@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 01-18-2016 - Created
- * @date 01-18-2016 - Updated
+ * @date 05-06-2016 - Updated
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0

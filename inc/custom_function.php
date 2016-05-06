@@ -19,9 +19,39 @@
  * @param int $limit, a limitation of the characters
  * @return string limited
  */
+if ( ! function_exists( 'post_excerpt' )) {
+  function post_excerpt( $text='', $limit=false) {
+    $excerpt = preg_replace(" (\[.*?\])",'',$text);
+    $excerpt = strip_shortcodes($excerpt);
+    $excerpt = strip_tags($excerpt);
+    if ($limit == false) {
+      $excerpt = substr($excerpt, 0, 100);
+    } else {
+      $excerpt = substr($excerpt, 0, $limit);
+    }
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+    if ($permalink != false) {
+      $excerpt = $excerpt.'... <a href="'.$permalink.'" style="color:#f06292">more</a>';
+    }
+    return $excerpt;
+  }
+}
+
+/**
+ * This function limits the characters to be display
+ * @source https://wordpress.org/support/topic/limit-excerpt-length-by-characters
+ * @param string $permalink, the given link
+ * @param int $limit, a limitation of the characters
+ * @return string limited
+ */
 if ( ! function_exists( 'excerpt_limited' )) {
-  function excerpt_limited( $permalink=false, $limit=false) {
-    $excerpt = get_the_content();
+  function excerpt_limited( $permalink=false, $limit=false, $custom_post=false, $field=null) {
+    if ($custom_post == true) {
+      $excerpt = get_field($field);
+    } else {
+      $excerpt = get_the_content();
+    }
     $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
     $excerpt = strip_shortcodes($excerpt);
     $excerpt = strip_tags($excerpt);

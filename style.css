@@ -42,15 +42,13 @@ Text Domain: mmfc
   height: 163px;
   width: 100%;
   padding: 16px;
-  background-color: rgba(255, 192, 203, 0.3);
 }
 .event-overlay h2 {
   padding-top: 30%;
-  text-shadow: 1px 1px white;
   font-weight: 600;
 }
 .event-card {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 #event {
   margin-top: 20px;
