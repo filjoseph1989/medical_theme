@@ -15,11 +15,13 @@
 
 <section id="anounce">
   <div class="row ">
-		<div class="col s12 l6">
+		<div class="col s12 l12">
       <?php the_content(); ?>
 		</div>
+    <!--
     <div class="col s12 l6">
       <?php the_field('campus_description'); ?>
 		</div>
+    -->
 	</div>
 </section>

@@ -67,21 +67,23 @@
           <div class="row">
             <div class="quick col s12">
               <div class="row waves-effect waves-light broch">
-                <?php $video_thumb = array( 'posts_per_page' => 2, 'category_name' => 'video-thumb' ); ?>
-                <?php $video       = get_posts( $video_thumb ); ?>
+                <!--
+                <?php // $video_thumb = array( 'posts_per_page' => 2, 'category_name' => 'video-thumb' ); ?>
+                <?php // $video       = get_posts( $video_thumb ); ?>
                 <div class="row left-height">&nbsp;</div>
                 <div class="row left-height">&nbsp;</div>
                 <div class="row">
-                  <?php foreach ($video as $post): ?>
-                    <?php $result = url_class(); ?>
+                  <?php  // foreach ($video as $post): ?>
+                    <?php // $result = url_class(); ?>
                     <div class="col s6 video-img">
-                      <a class='<?php echo $result['class']; ?>' href="<?php echo $result['url']; ?>">
-                        <?php the_post_thumbnail(); ?>
+                      <a class='<?php // echo $result['class']; ?>' href="<?php echo $result['url']; ?>">
+                        <?php // the_post_thumbnail(); ?>
                       </a>
                     </div>
-                  <?php endforeach; ?>
-                  <?php wp_reset_postdata(); ?>
+                  <?php // endforeach; ?>
+                  <?php // wp_reset_postdata(); ?>
                 </div>
+                -->
               </div>
             </div>
           </div>

@@ -23,16 +23,16 @@
       <li>Email: mmfc_edu@yahoo.com</li>
       <li>Mobile No: 0928-286-0232</li>
       <li>Mobile No: 0915-734-3509</li>
-      <li>Land Line: 221-6225</li>
+      <li>Land Line: 224-0215</li>
     </ul>
     <b>Admissions</b>
     <ul class="footer-other">
-      <li><a href="mailto:admin@mmfcdavao.com">admin@mmfcdavao.com</a></li>
+      <li><a href="mailto:mmfc_edu@yahoo.com">mmfc_edu@yahoo.com</a></li>
       <li>2216225</li>
     </ul>
     <b>Registrar</b>
     <ul class="footer-other">
-      <li><a href="mailto:registrar@mmfcdavao.com">registrar@mmfcdavao.com</a></li>
+      <li><a href="mailto:mmfc_edu@yahoo.com">mmfc_edu@yahoo.com</a></li>
       <li>2216225</li>
     </ul>
     <ul class="footer-term">
@@ -63,16 +63,16 @@
         <li>Address: P. Villanueva St, Agdao, Davao City</li>
         <li>Email: mmfc_edu@yahoo.com</li>
         <li>Mobile No: 0928-286-0232 | 0915-734-3509</li>
-        <li>Land No: 221-6225</li>
+        <li>Land No: 224-0215</li>
       </ul>
       <b>Admissions</b>
       <ul class="footer-other">
-        <li><a href="mailto:admin@mmfcdavao.com">admin@mmfcdavao.com</a></li>
+        <li><a href="mailto:mmfc_edu@yahoo.com">mmfc_edu@yahoo.com</a></li>
         <li>Tel: 082-221-6225</li>
       </ul>
       <b>Registrar</b>
       <ul class="footer-other">
-        <li><a href="mailto:registrar@mmfcdavao.com">registrar@mmfcdavao.com</a></li>
+        <li><a href="mailto:mmfc_edu@yahoo.com">mmfc_edu@yahoo.com</a></li>
         <li>082-221-6225</li>
       </ul>
     </div>

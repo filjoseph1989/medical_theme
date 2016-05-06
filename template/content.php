@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 12-20-2015
- * @date 05-03-2016
+ * @date 05-05-2016
  * @package WordPress
  * @subpackage mmfc-site
  * @since mmfc-site 1.0
@@ -60,9 +60,11 @@
                         </a>
                       </h2>
                     </div>
+                    <!--
                     <div class="mdl-card__supporting-text">
-                      <p><?php echo excerpt_limited( false, 50); ?></p>
+                      <p><?php // echo excerpt_limited( false, 50); ?></p>
                     </div>
+                    -->
                   </div>
                 </div>
             <?php } ?>
