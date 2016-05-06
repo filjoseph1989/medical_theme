@@ -20,7 +20,7 @@
 		</div>
     <!--
     <div class="col s12 l6">
-      <?php the_field('campus_description'); ?>
+      <?php //the_field('campus_description'); ?>
 		</div>
     -->
 	</div>
