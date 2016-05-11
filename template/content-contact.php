@@ -5,8 +5,8 @@
  * @author fil joseph elman {beluan}
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
- * @date 01-17-2016 - Created
- * @date 01-27-2016 - Updated
+ * @date 01-17-2016
+ * @date 05-10-2016
  * @package WordPress
  * @subpackage mmfctheme
  * @since mmfctheme 1.0
@@ -25,12 +25,12 @@
 </div>
 <div class="row contact-row">
   <div class="col s12 l6">
-      <?php if (have_posts()) { ?>
-        <?php while (have_posts()) { ?>
+    <?php if (have_posts()): ?>
+      <?php while (have_posts()): ?>
         <?php the_post(); ?>
         <?php the_content(); ?>
-      <?php  } # end while ?>
-      <?php } # end if ?>
+      <?php endwhile; ?>
+    <?php endif; ?>
   </div>
   <div class="col s12 l6">
     <table class="table">
@@ -44,7 +44,7 @@
       </tr>
       <tr>
         <td class="center"><i class="fa fa-phone fa-2x"></i></td>
-        <td>(+63) 82 221 6225</td>
+        <td>(+63) 82 221 6225, 224 0215</td>
       </tr>
     </table>
   </div>
