@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 12-20-2015
- * @date 05-05-2016
+ * @date 05-18-2016
  * @package WordPress
  * @subpackage mmfc-site
  * @since mmfc-site 1.0
@@ -22,18 +22,20 @@
           'orderby'        => 'DESC',
           'post_type'      => 'post',
           'post_status'    => 'publish',
-          'posts_per_page' => 1
+          'posts_per_page' => -1
         );
         $myposts = get_posts( $args );
-        $post    = $myposts[0];
-        setup_postdata( $post );
-        if (have_posts()) {
+        // $post    = $myposts[0];
       ?>
-      <?php the_title('<h1>','</h1>'); ?>
-      <?php # echo excerpt_limited( false, 120); ?>
-      <h5><?php # echo "Click the button to see what we offer."; ?></h5>
-      <p><a id="event" class="waves-effect waves-light btn teal btn-large tagline-button" href="<?php the_permalink(); ?>">VIEW ANNOUNCEMENT</a></p>
-      <?php } wp_reset_postdata(); # close the query ?>
+      <div id="slideshow">
+        <?php foreach ($myposts as $post): setup_postdata( $post ); ?>
+          <div>
+            <?php the_title('<h1>','</h1>'); ?>
+            <p><a id="event" class="waves-effect waves-light btn teal btn-large tagline-button" href="<?php the_permalink(); ?>">VIEW ANNOUNCEMENT</a></p>
+          </div>
+        <?php endforeach; ?>
+      </div>
+      <?php wp_reset_postdata(); ?>
     </div>
   </div>
 </section>
