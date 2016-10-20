@@ -8,7 +8,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 01-17-2016
- * @date 04-27-2016
+ * @date 10-20-2016
  * @package WordPress
  * @subpackage mmfc-site
  * @since mmfc-site 1.0
@@ -37,13 +37,13 @@
               <div id="video" class="row">
                 <div class="col s12">
                   <div id="video-thumb" class="row">
-                    <?php $args        = array( 'posts_per_page' => 2, 'category_name' => 'video' ); ?>
+                    <?php $args        = array( 'posts_per_page' => 3, 'category_name' => 'video' ); ?>
                     <?php $myposts     = get_posts( $args ); ?>
-                    <div class="col s4 center-align">
+                    <div class="col s5 center-align">
                       <div class="row waves-effect waves-light">
                         <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                           <?php $result = url_class(); ?>
-                          <div class="col s6 video-img">
+                          <div class="col s4 video-img">
                             <a class='<?php echo $result['class']; ?>' href="<?php echo $result['url']; ?>">
                               <?php the_post_thumbnail(); ?>
                             </a>
@@ -51,7 +51,6 @@
                         <?php endforeach; ?>
                       </div>
                     </div>
-                    <!-- <div class="bullet">&nbsp;</div> -->
                     <div class="col s3 center-align">
                       <!-- No Content Here -->
                     </div>
