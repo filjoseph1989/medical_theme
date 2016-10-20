@@ -6,7 +6,7 @@
  * @contact fil.elman@greyandgreentech.com - business
  *				  filjoseph22@gmail.com - personal
  * @date 01-18-2016
- * @date 04-21-2016
+ * @date 10-20-2016
  * @package WordPress
  * @subpackage mmfc-site
  * @since mmfc-site 1.0
@@ -38,7 +38,7 @@
                     <?php if (has_post_thumbnail()) {
                       the_post_thumbnail('medium');
                     } else { ?>
-                      <img src="<?php bloginfo('template_url'); ?>/img/default.png" alt="default image" />
+                      <img src="<?php bloginfo('template_url'); ?>/img/defaults.png" alt="default image">
                     <?php } ?>
                   </div>
                   <div class="col s12 l9">
